@@ -287,8 +287,10 @@
         
         .profile-container {
             position: relative;
-            width: clamp(300px, 40vw, 450px);
-            height: clamp(300px, 40vw, 450px);
+            width: clamp(220px, 30vw, 320px);
+            height: clamp(220px, 30vw, 320px);
+            aspect-ratio: 1 / 1;
+            margin: -60px auto 0;
         }
         
         .profile-ring {
@@ -616,7 +618,7 @@
             .section-title { font-size: 2rem; margin-bottom: 2.5rem; }
             .hero-title { font-size: 2.5rem; margin-bottom: 1rem; }
             .hero-content { gap: 2rem; }
-            .profile-container { width: 250px; height: 250px; margin-top: 1rem; }
+            .profile-container { width: clamp(180px, 60vw, 250px); height: clamp(180px, 60vw, 250px); margin: 1rem auto 0; aspect-ratio: 1 / 1; }
             .bento-grid { grid-template-columns: 1fr; gap: 1.5rem; }
             .bento-card { padding: 1.8rem; }
             .bento-about, .bento-edu, .bento-location, .bento-experience { grid-column: span 1; }
@@ -767,6 +769,19 @@
         <h2 class="section-title reveal">Featured Projects</h2>
         <div class="projects-grid">
             
+            <!-- Project: Jolly Cabs -->
+            <div class="project-card reveal project-3d">
+                <div class="project-thumb"><img src="https://images.unsplash.com/photo-1556122071-e404be74579d?w=600&q=80" alt="Jolly Cabs"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Jolly Cabs</h3>
+                    <p class="project-desc">A premium cab booking service website with a seamless booking experience, integrated WhatsApp booking, and a professional, conversion-optimized design.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Vanilla JS</span><span class="tag">WhatsApp API</span>
+                    </div>
+                    <a href="https://jollycabs.netlify.app" target="_blank" class="project-link">View Live Project <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+
             <!-- Project 1 -->
             <div class="project-card reveal project-3d">
                 <div class="project-thumb"><img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&q=80" alt="TaskFlow"></div>
